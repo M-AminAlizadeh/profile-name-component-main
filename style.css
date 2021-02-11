@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:hsl(185, 75%, 39%);
+}
+.top{
+    position:absolute;
+    width:50%;
+    top:-30%;
+}
+.bottom-shape{
+    position:absolute;
+    width:45%;
+    bottom:-20%;
+    right:-10px;
+}
+.box{
+    position:absolute;
+    height:350px;
+    width:350px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgb(255, 255, 255);
+    border-radius:15px;
+}
+.svg{
+    position:relative;
+    background-image:url("images/bg-pattern-card.svg");
+    width:100%;
+    height:120px;
+    border-radius:15px 15px 0 0;    
+}
+.circle{
+    position:absolute;
+    height:100px;
+    width:100px;
+    border:5px solid white;
+    border-radius:50%;
+    top:20%;
+    left:35%;
+    text-align:center;
+    z-index:2;
+    background-image:url("images/image-victor.jpg");
+    background-position:center;  
+}
+.s1{
+    font-size:18px;
+    font-family:Kumbh Sans;
+    font-weight:700;
+    color:hsl(229, 23%, 23%);
+}
+.name{
+    position:absolute;
+    top:55%;
+    left:30%;
+}
+.s2{font-size:18px;
+    font-family:Kumbh Sans;
+    font-weight:400;
+    color:hsl(227, 10%, 46%);}
+.age{
+    position:absolute;
+    top:55%;
+    right:32%;
+}
+.s3{
+    font-size:15px;
+    font-family:Kumbh Sans;
+    font-weight:400;
+    color:hsl(227, 10%, 46%);
+}
+.location{
+    position:absolute;
+    bottom:32%;
+    right:43%;
+}
+.bottom{
+    position:absolute;
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    bottom:0;
+    padding:15px 10px;
+    border-top:1px solid hsl(0, 0%, 59%);
+    text-align:center;
+}
+.f1{
+    font-size:13px;
+    padding:5px 30px;
+}
+.followers,.likes,.photos{
+    padding-top:10px;
+}
+.attribution{
+    position:absolute;
+    text-align:center;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+/* THIS PART IS ABOUT MOBILE DEVICES */
+@media (max-width:375px){
+    .attribution{
+        margin-bottom:-20px;
+    }
+    .top{
+        position:absolute;
+        width:60%;
+        top:-10%;
+    }
+    .bottom-shape{
+        position:absolute;
+        width:60%;
+        right:0;
+    }
+    .box{
+        width:90%;
+        margin:auto;
+    }
+}
